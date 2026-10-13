@@ -1,151 +1,312 @@
 <!DOCTYPE html>
+
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【上田蒼斗】 - Web Page</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --text-color: #333;
-            --bg-color: #f8f9fa;
-            --line-color: #eee;
-        }
 
-        body {
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-            line-height: 1.7;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-        }
+&#x20;   <meta charset="UTF-8">
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            border-radius: 5px;
-        }
+&#x20;   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
+&#x20;   <title>【上田蒼斗】 - Web Page</title>
 
-        h1 {
-            color: var(--primary-color);
-            margin: 0 0 10px 0;
-            font-size: 2rem;
-        }
+&#x20;   <style>
 
-        h2 {
-            color: var(--primary-color);
-            border-left: 4px solid var(--primary-color);
-            padding-left: 10px;
-            font-size: 1.4rem;
-            margin-top: 40px;
-            margin-bottom: 15px;
-        }
+&#x20;       :root {
 
-        .profile-info {
-            display: grid;
-            grid-template-columns: 120px 1fr;
-            gap: 10px row-gap;
-            margin-bottom: 20px;
-        }
+&#x20;           --primary-color: #2c3e50;
 
-        .profile-label {
-            font-weight: bold;
-            color: #666;
-        }
+&#x20;           --text-color: #333;
 
-        ul {
-            padding-left: 20px;
-            margin: 0;
-        }
+&#x20;           --bg-color: #f8f9fa;
 
-        li {
-            margin-bottom: 10px;
-        }
+&#x20;           --line-color: #eee;
 
-        .publication-list li {
-            list-style-type: none;
-            position: relative;
-            padding-left: 15px;
-        }
+&#x20;       }
 
-        .publication-list li::before {
-            content: "•";
-            color: var(--primary-color);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
 
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #888;
-            border-top: 1px solid var(--line-color);
-            padding-top: 20px;
-        }
 
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
+&#x20;       body {
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+&#x20;           font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+&#x20;           line-height: 1.7;
+
+&#x20;           color: var(--text-color);
+
+&#x20;           background-color: var(--bg-color);
+
+&#x20;           margin: 0;
+
+&#x20;           padding: 0;
+
+&#x20;       }
+
+
+
+&#x20;       .container {
+
+&#x20;           max-width: 800px;
+
+&#x20;           margin: 40px auto;
+
+&#x20;           padding: 20px;
+
+&#x20;           background: #fff;
+
+&#x20;           box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+&#x20;           border-radius: 5px;
+
+&#x20;       }
+
+
+
+&#x20;       header {
+
+&#x20;           border-bottom: 2px solid var(--primary-color);
+
+&#x20;           padding-bottom: 20px;
+
+&#x20;           margin-bottom: 30px;
+
+&#x20;       }
+
+
+
+&#x20;       h1 {
+
+&#x20;           color: var(--primary-color);
+
+&#x20;           margin: 0 0 10px 0;
+
+&#x20;           font-size: 2rem;
+
+&#x20;       }
+
+
+
+&#x20;       h2 {
+
+&#x20;           color: var(--primary-color);
+
+&#x20;           border-left: 4px solid var(--primary-color);
+
+&#x20;           padding-left: 10px;
+
+&#x20;           font-size: 1.4rem;
+
+&#x20;           margin-top: 40px;
+
+&#x20;           margin-bottom: 15px;
+
+&#x20;       }
+
+
+
+&#x20;       .profile-info {
+
+&#x20;           display: grid;
+
+&#x20;           grid-template-columns: 120px 1fr;
+
+&#x20;           gap: 10px row-gap;
+
+&#x20;           margin-bottom: 20px;
+
+&#x20;       }
+
+
+
+&#x20;       .profile-label {
+
+&#x20;           font-weight: bold;
+
+&#x20;           color: #666;
+
+&#x20;       }
+
+
+
+&#x20;       ul {
+
+&#x20;           padding-left: 20px;
+
+&#x20;           margin: 0;
+
+&#x20;       }
+
+
+
+&#x20;       li {
+
+&#x20;           margin-bottom: 10px;
+
+&#x20;       }
+
+
+
+&#x20;       .publication-list li {
+
+&#x20;           list-style-type: none;
+
+&#x20;           position: relative;
+
+&#x20;           padding-left: 15px;
+
+&#x20;       }
+
+
+
+&#x20;       .publication-list li::before {
+
+&#x20;           content: "•";
+
+&#x20;           color: var(--primary-color);
+
+&#x20;           font-weight: bold;
+
+&#x20;           position: absolute;
+
+&#x20;           left: 0;
+
+&#x20;       }
+
+
+
+&#x20;       footer {
+
+&#x20;           margin-top: 50px;
+
+&#x20;           text-align: center;
+
+&#x20;           font-size: 0.9rem;
+
+&#x20;           color: #888;
+
+&#x20;           border-top: 1px solid var(--line-color);
+
+&#x20;           padding-top: 20px;
+
+&#x20;       }
+
+
+
+&#x20;       a {
+
+&#x20;           color: #3498db;
+
+&#x20;           text-decoration: none;
+
+&#x20;       }
+
+
+
+&#x20;       a:hover {
+
+&#x20;           text-decoration: underline;
+
+&#x20;       }
+
+&#x20;   </style>
+
 </head>
+
 <body>
+
+
 
 <div class="container">
 
-    <header>
-        <h1>【上田 蒼斗 / Aoto Ueda】</h1>
-        
-        <div class="profile-info">
-            <div class="profile-label">所属</div>
-            <div>【早稲田大学大学院 文学研究科】</div>
-            
-            <div class="profile-label">研究領域</div>
-            <div>【心理統計学】</div>
-            
-            <div class="profile-label">eメール</div>
-            <div><a href="mailto:ueda523@akane.waseda.jp"></a></div>
-        </div>
-    </header>
 
-    <main>
-        <section id="articles">
-            <h2>論文</h2>
-            <ul class="publication-list">
-                 豊田 秀樹・武田 大輝・谷口 美紀・木村 颯汰・上田 蒼斗・佐々木 研一 (印刷中). 国勢調査の不詳率低減に向けたインターネット調査の有効性検証　心理学研究.
-            </ul>
-        </section>
 
-        <section id="books">
-            <h2>出版物</h2>
-            <ul class="publication-list">
-            </ul>
-        </section>
+&#x20;   <header>
 
-        <section id="presentations">
-            <h2>学会発表</h2>
-            <ul class="publication-list">
-            </ul>
-        </section>
-    </main>
+&#x20;       <h1>【上田 蒼斗 / Aoto Ueda】</h1>
+
+&#x20;       
+
+&#x20;       <div class="profile-info">
+
+&#x20;           <div class="profile-label">所属</div>
+
+&#x20;           <div>【早稲田大学大学院 文学研究科】</div>
+
+&#x20;           
+
+&#x20;           <div class="profile-label">研究領域</div>
+
+&#x20;           <div>【心理統計学】</div>
+
+&#x20;           
+
+&#x20;           <div class="profile-label">eメール</div>
+
+&#x20;           <div> ueda523@akane.waseda.jp </div>
+
+&#x20;       </div>
+
+&#x20;   </header>
+
+
+
+&#x20;   <main>
+
+&#x20;       <section id="articles">
+
+&#x20;           <h2>論文</h2>
+
+&#x20;           <ul class="publication-list">
+
+&#x20;                豊田 秀樹・武田 大輝・谷口 美紀・木村 颯汰・上田 蒼斗・佐々木 研一 (印刷中). 国勢調査の不詳率低減に向けたインターネット調査の有効性検証　心理学研究.
+
+&#x20;           </ul>
+
+&#x20;       </section>
+
+
+
+&#x20;       <section id="books">
+
+&#x20;           <h2>出版物</h2>
+
+&#x20;           <ul class="publication-list">
+
+&#x20;           </ul>:準備中
+
+&#x20;       </section>
+
+
+
+&#x20;       <section id="presentations">
+
+&#x20;           <h2>学会発表</h2>
+
+&#x20;           <ul class="publication-list">
+
+&#x20;           <li>佐々木 研一・上田 蒼斗・木村 颯汰・谷口 美紀・武田 大輝（2026/09） 「はじめての認知診断モデル　ーAI時代における学習者診断の新展開ー」， 日本心理学会　第90回大会　チュートリアル・ワークショップ<li>
+
+&#x20;     <li>武田 大輝・豊田 秀樹・谷口 美紀・木村 颯汰・上田 蒼斗・佐々木 研一（2026/9）「国勢調査における不詳率低減のための統計的分析　ー散らばり母数の回帰による過分散構造の柔軟なモデリングー」，日本心理学会　第90回大会　一般研究発表<li>
+
+&#x20;     <li>木村 颯汰・上田 蒼斗・佐々木 研一・武田 大輝・谷口 美紀（2026/09） 「やさしい認知診断モデル　―GDINAとQ行列の理解を通じた学習者診断の基礎―」， 日本テスト学会　第24回大会　チュートリアル<li>
+
+&#x20;            <li>上田　蒼斗・武田 大輝・豊田 秀樹（2026/09） 「CDMとIRTの比較、CDMのモデル選択　ー日経経済知力テストの分析（2） 高次モデルの導入ー」， 日本テスト学会　第24回大会<li>
+&#x20;            <li>豊田 俊輔・安達　祐貴・上田　蒼斗・木村　颯汰・豊田　秀樹（2026/09） 「認知診断適応型テストにおける項目選択　ー日経経済知力テストの分析（4） 項目選択規則の比較ー」， 日本テスト学会　第24回大会<li>
+&#x20;     <li>佐々木 研一・上田 蒼斗・木村 颯汰・谷口 美紀・武田 大輝（2026/ 10） 「認知診断モデルとは何か　ー個別化教育を支える診断的アプローチの最前線ー」， 日本教育心理学会　第68回総会　会員企画シンポジウム<li>
+
+&#x20;           </ul>
+
+&#x20;       </section>
+
+&#x20;   </main>
+
+
 
 </div>
 
+
+
 </body>
+
 </html>
+
